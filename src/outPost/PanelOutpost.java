@@ -16,6 +16,5 @@ public class PanelOutpost extends JPanel {
 
         // Dodanie napisu do panelu
         add(tytul);
-
     }
 }
