@@ -15,11 +15,11 @@ public class PaczkomatGUI {
 
         // Panel Głowny
         PanelGlowny panelGlowny = new PanelGlowny();
-        PrzyciskPowrot przyciskPowrot = new PrzyciskPowrot();
+        PrzyciskADMIN przyciskADMIN = new PrzyciskADMIN();
         ramka.add(panelGlowny, BorderLayout.CENTER);
-        ramka.add(przyciskPowrot, BorderLayout.SOUTH);
+        ramka.add(przyciskADMIN, BorderLayout.SOUTH);
 
-        
+
         ramka.setVisible(true);
     }
 }

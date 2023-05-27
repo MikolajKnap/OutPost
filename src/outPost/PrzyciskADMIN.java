@@ -6,8 +6,8 @@ import java.awt.Font;
 
 import javax.swing.JButton;
 
-public class PrzyciskPowrot extends JButton {
-    public PrzyciskPowrot() {
+public class PrzyciskADMIN extends JButton {
+    public PrzyciskADMIN() {
         setText("ADMIN");
         setBackground(PaczkomatGUI.kolorPrzyciskow);
         setForeground(Color.DARK_GRAY);
