@@ -12,28 +12,40 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PanelGlowny extends JPanel{
+    public JLabel napisWyboru;
+    public JButton buttonOdbierz;
+    public JButton buttonNadaj;
+
     public PanelGlowny() {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
         setLayout(new GridBagLayout());
         // Napis wyboru
-        JLabel napisWyboru = new JLabel("Co chciałbyś dzisiaj zrobić?");
+        napisWyboru = new JLabel("Co chciałbyś dzisiaj zrobić?");
         napisWyboru.setFont(new Font(Font.DIALOG, Font.PLAIN, 30));
         napisWyboru.setHorizontalAlignment(JLabel.CENTER);
 
         // Tworzenie button1 - odbierz paczke
-        JButton buttonOdbierz = new JButton("Odbierz paczkę");
+        buttonOdbierz = new JButton("Odbierz paczkę");
         buttonOdbierz.setBackground(PaczkomatGUI.kolorPrzyciskow);
         buttonOdbierz.setForeground(Color.DARK_GRAY);
         buttonOdbierz.setFont(new Font("Tahoma", Font.BOLD, 32));
         buttonOdbierz.setFocusPainted(false);
 
         // // Tworzenie button2 - odbierz paczke
-        JButton buttonNadaj = new JButton("Nadaj paczkę");
+        buttonNadaj = new JButton("Nadaj paczkę");
         buttonNadaj.setBackground(PaczkomatGUI.kolorPrzyciskow);
         buttonNadaj.setForeground(Color.DARK_GRAY);
         buttonNadaj.setFont(new Font("Tahoma", Font.BOLD, 32));
         buttonNadaj.setFocusPainted(false);
 
+        buttonNadaj.addActionListener(e -> {
+            PaczkomatGUI.ramka.remove(this);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelWybierzPaczke);
+            PaczkomatGUI.ramka.revalidate();
+            PaczkomatGUI.ramka.repaint();
+        });
+
+    
         // Ustawienie preferowanych rozmiarów przycisków
         buttonOdbierz.setPreferredSize(new Dimension(500, 80));
         buttonNadaj.setPreferredSize(new Dimension(500, 80));
@@ -48,6 +60,9 @@ public class PanelGlowny extends JPanel{
         add(buttonOdbierz, gbc);
         gbc.gridy = 2; // wiersz 2
         add(buttonNadaj, gbc);
+
+    }
+    void buttonNadajOnClick() {
 
     }
 }
