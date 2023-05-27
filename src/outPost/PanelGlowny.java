@@ -1,5 +1,6 @@
 package outPost;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -40,7 +41,9 @@ public class PanelGlowny extends JPanel{
 
         buttonNadaj.addActionListener(e -> {
             PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelWybierzPaczke);
+            PaczkomatGUI.ramka.remove(PaczkomatGUI.przyciskADMIN);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelWybierzPaczke, BorderLayout.CENTER);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.przyciskPowrot, BorderLayout.SOUTH);
             PaczkomatGUI.ramka.revalidate();
             PaczkomatGUI.ramka.repaint();
         });
