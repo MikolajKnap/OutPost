@@ -14,7 +14,7 @@ public class PrzyciskBazowy  extends JButton{
         setText(" ");
         setBackground(PaczkomatGUI.kolorPrzyciskow);
         setForeground(Color.DARK_GRAY);
-        setFont(new Font("Tahoma", Font.BOLD, 32));
+        setFont(new Font("Tahoma", Font.BOLD, 28));
         setFocusPainted(false);
         setPreferredSize(new Dimension(250, 50));
     }
@@ -22,7 +22,7 @@ public class PrzyciskBazowy  extends JButton{
         setText(text);
         setBackground(PaczkomatGUI.kolorPrzyciskow);
         setForeground(Color.DARK_GRAY);
-        setFont(new Font("Tahoma", Font.BOLD, 32));
+        setFont(new Font("Tahoma", Font.BOLD, 28));
         setFocusPainted(false);
         setPreferredSize(new Dimension(250, 50));
     }

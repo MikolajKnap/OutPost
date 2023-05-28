@@ -12,7 +12,9 @@ public class PaczkomatGUI {
     static final PanelWybierzPaczke panelWybierzPaczke = new PanelWybierzPaczke();
     static final PanelDanePaczki panelDanePaczki = new PanelDanePaczki();
     static final PanelPowrotZatwierdz panelPowrotZatwierdz = new PanelPowrotZatwierdz();
-
+    static final PanelPlatnosc panelPlatnosc = new PanelPlatnosc();
+    static final PanelKoniecNadania panelKoniecNadania = new PanelKoniecNadania();
+    static final PanelADMIN panelADMIN = new PanelADMIN();
     public static void main(String[] args) {
         ramka.add(panelOutpost, BorderLayout.NORTH);
         ramka.add(panelGlowny, BorderLayout.CENTER);

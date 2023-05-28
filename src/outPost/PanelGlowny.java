@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 public class PanelGlowny extends JPanel{
     private JLabel napisWyboru;
-    private PrzyciskBazowy buttonOdbierz, buttonNadaj, przyciskADMIN;
+    private PrzyciskBazowy buttonOdbierz, buttonNadaj, buttonADMIN;
 
     public PanelGlowny() {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
@@ -39,7 +39,7 @@ public class PanelGlowny extends JPanel{
         buttonNadaj = new PrzyciskNadajPaczke();
 
         // Przycisk ADMIN
-        przyciskADMIN = new PrzyciskADMIN();
+        buttonADMIN = new PrzyciskADMIN();
 
 
         // -----------------Action Listenery Przyciskow------------------
@@ -50,6 +50,14 @@ public class PanelGlowny extends JPanel{
             PaczkomatGUI.ramka.revalidate();
             PaczkomatGUI.ramka.repaint();
         });
+
+        buttonADMIN.addActionListener(e -> {
+            PaczkomatGUI.ramka.remove(this);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelADMIN);
+            PaczkomatGUI.ramka.revalidate();
+            PaczkomatGUI.ramka.repaint();
+        });
+        
 
         // ---------------------------Grid--------------------------------
 
@@ -64,6 +72,6 @@ public class PanelGlowny extends JPanel{
         gbc.gridy = 2; // wiersz 2
         add(buttonNadaj, gbc);
         gbc.gridy = 3; // wiersz 3
-        add(przyciskADMIN, gbc);
+        add(buttonADMIN, gbc);
     }
 }

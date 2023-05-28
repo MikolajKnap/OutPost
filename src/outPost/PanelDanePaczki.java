@@ -26,7 +26,6 @@ public class PanelDanePaczki extends JPanel{
         dolnyPanel = new PanelPowrotZatwierdz();
 
         // -----------------Action Listenery Przyciskow----------------------
-
         dolnyPanel.buttonPowrot.addActionListener(e -> {
             PaczkomatGUI.ramka.remove(this);
             PaczkomatGUI.ramka.add(PaczkomatGUI.panelWybierzPaczke);
@@ -38,10 +37,14 @@ public class PanelDanePaczki extends JPanel{
         dolnyPanel.buttonZatwierdz.addActionListener(e -> {
             System.out.println(String.format("Nr telefonu nadawcy: %s\nNr telefonu odbiorcy: %s\nKod Paczkomatu: %s",
                     poleTelefonNadawcy.getText(), poleTelefonOdbiorcy.getText(), poleKodPaczkomatu.getText()));
+
+            PaczkomatGUI.ramka.remove(this);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelPlatnosc);
+            PaczkomatGUI.ramka.revalidate();
+            PaczkomatGUI.ramka.repaint();
         });
 
         // --------------------------Napisy--------------------------------
-
         // Napis NrNadawcy
         JLabel napisTelefonNadawcy = new JLabel("Wpisz swoj numer:");
         napisTelefonNadawcy.setFont(new Font(Font.DIALOG, Font.BOLD, 20));
@@ -58,7 +61,6 @@ public class PanelDanePaczki extends JPanel{
         napisKodPaczkomatu.setHorizontalAlignment(JLabel.CENTER);
 
         // --------------------------Pola input------------------------------
-
         // Stworzenie trzech inputow
         poleTelefonNadawcy = new PoleTekstoweBazowe();
         poleTelefonOdbiorcy = new PoleTekstoweBazowe();
