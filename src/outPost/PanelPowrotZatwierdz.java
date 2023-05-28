@@ -6,7 +6,6 @@ import outPost.buttons.PrzyciskZatwierdz;
 
 import java.awt.BorderLayout;
 
-import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class PanelPowrotZatwierdz extends JPanel {

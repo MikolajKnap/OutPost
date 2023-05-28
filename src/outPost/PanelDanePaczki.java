@@ -2,8 +2,6 @@ package outPost;
 
 import outPost.fields.PoleTekstoweBazowe;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -12,7 +10,6 @@ import java.awt.Insets;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 public class PanelDanePaczki extends JPanel{
     private String nrTelefonuNadawcy;
@@ -56,7 +53,7 @@ public class PanelDanePaczki extends JPanel{
         napisTelefonOdbiorcy.setHorizontalAlignment(JLabel.CENTER);
 
         // Napis kodPaczkomatu
-        JLabel napisKodPaczkomatu  = new JLabel("Wpisz numer odbiorcy:");
+        JLabel napisKodPaczkomatu  = new JLabel("Wpisz kod paczkomatu:");
         napisKodPaczkomatu.setFont(new Font(Font.DIALOG, Font.BOLD, 20));
         napisKodPaczkomatu.setHorizontalAlignment(JLabel.CENTER);
 
