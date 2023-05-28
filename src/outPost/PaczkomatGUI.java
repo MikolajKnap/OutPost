@@ -16,7 +16,6 @@ public class PaczkomatGUI {
     public static void main(String[] args) {
         ramka.add(panelOutpost, BorderLayout.NORTH);
         ramka.add(panelGlowny, BorderLayout.CENTER);
-        // ramka.add(panelDanePaczki, BorderLayout.CENTER);
         ramka.setVisible(true);
     }
 }
