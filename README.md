@@ -1,7 +1,9 @@
-# OutPost
-### Status z 27.05
-![image](https://github.com/MikolajKnap/OutPost/assets/73618404/a383a892-2bc8-467f-8a85-e69acf109883)
 
 ### Status z 28.05
-![image](https://github.com/MikolajKnap/OutPost/assets/73618404/1353f63b-7f5f-4482-a4a1-ccae19d4ab2f)
+![image](https://github.com/MikolajKnap/OutPost/assets/73618404/5d4c0271-f90e-47f0-9a69-820aacc8304d)
 
+![image](https://github.com/MikolajKnap/OutPost/assets/73618404/bc8e3ced-ef21-4fac-a5c9-248f9e21ac2f)
+
+![image](https://github.com/MikolajKnap/OutPost/assets/73618404/25885c0e-89fa-4327-8861-8497ee73ace3)
+
+![image](https://github.com/MikolajKnap/OutPost/assets/73618404/7c959dd2-2a71-4ff7-a20a-15b79efba200)
