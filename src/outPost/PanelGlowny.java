@@ -13,13 +13,18 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PanelGlowny extends JPanel{
-    public JLabel napisWyboru;
-    public JButton buttonOdbierz;
-    public JButton buttonNadaj;
+    private JLabel napisWyboru;
+    private JButton buttonOdbierz;
+    private JButton buttonNadaj;
+    private JButton przyciskADMIN;
 
     public PanelGlowny() {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
         setLayout(new GridBagLayout());
+
+        // Przycisk ADMIN
+        przyciskADMIN = new PrzyciskADMIN();
+
         // Napis wyboru
         napisWyboru = new JLabel("Co chciałbyś dzisiaj zrobić?");
         napisWyboru.setFont(new Font(Font.DIALOG, Font.PLAIN, 30));
@@ -42,13 +47,10 @@ public class PanelGlowny extends JPanel{
         // buttonNadaj onClick
         buttonNadaj.addActionListener(e -> {
             PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.remove(PaczkomatGUI.przyciskADMIN);
             PaczkomatGUI.ramka.add(PaczkomatGUI.panelWybierzPaczke, BorderLayout.CENTER);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.przyciskPowrot, BorderLayout.SOUTH);
             PaczkomatGUI.ramka.revalidate();
             PaczkomatGUI.ramka.repaint();
         });
-
     
         // Ustawienie preferowanych rozmiarów przycisków
         buttonOdbierz.setPreferredSize(new Dimension(500, 80));
@@ -64,6 +66,7 @@ public class PanelGlowny extends JPanel{
         add(buttonOdbierz, gbc);
         gbc.gridy = 2; // wiersz 2
         add(buttonNadaj, gbc);
-
+        gbc.gridy = 3; // wiersz 3
+        add(przyciskADMIN, gbc);
     }
 }

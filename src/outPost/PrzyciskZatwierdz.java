@@ -6,9 +6,9 @@ import java.awt.Font;
 
 import javax.swing.JButton;
 
-public class PrzyciskPowrot extends JButton {
-    public PrzyciskPowrot() {
-        setText("POWROT");
+public class PrzyciskZatwierdz extends JButton{
+    public PrzyciskZatwierdz() {
+        setText("ZATWIERDZ");
         setBackground(PaczkomatGUI.kolorPrzyciskow);
         setForeground(Color.DARK_GRAY);
         setFont(new Font("Tahoma", Font.BOLD, 32));

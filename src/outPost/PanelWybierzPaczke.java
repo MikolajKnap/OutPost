@@ -1,4 +1,5 @@
 package outPost;
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -10,14 +11,25 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 public class PanelWybierzPaczke extends JPanel {
-    public JLabel napisWyboru;
-    public JButton buttonXXL;
-    public JButton buttonM;
-    public JButton buttonS;
+    private JLabel napisWyboru;
+    private JButton buttonXXL;
+    private JButton buttonM;
+    private JButton buttonS;
+    private JButton przyciskPowrot;
 
     public PanelWybierzPaczke() {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
         setLayout(new GridBagLayout());
+
+        // Tworze przycisk powrot i ustawiam jego onClick
+        przyciskPowrot = new PrzyciskPowrot();
+        przyciskPowrot.addActionListener(e -> {
+            PaczkomatGUI.ramka.remove(this);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelGlowny, BorderLayout.CENTER);
+            PaczkomatGUI.ramka.revalidate();
+            PaczkomatGUI.ramka.repaint();
+        });
+
         // Napis wyboru
         napisWyboru = new JLabel("Wybierz rozmiar paczki!");
         napisWyboru.setFont(new Font(Font.DIALOG, Font.PLAIN, 30));
@@ -49,6 +61,36 @@ public class PanelWybierzPaczke extends JPanel {
         buttonM.setPreferredSize(new Dimension(500, 80));
         buttonS.setPreferredSize(new Dimension(500, 80));
 
+        // ButtonXXL onClick
+        buttonXXL.addActionListener(e -> {
+            // ustaw paczke na XXL
+            // przejdz do kolejnego panelu czyli do PanelDanePaczki
+            PaczkomatGUI.ramka.remove(this);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelDanePaczki);
+            PaczkomatGUI.ramka.revalidate();
+            PaczkomatGUI.ramka.repaint();
+        });
+
+        // ButtonM onClick
+        buttonM.addActionListener(e -> {
+            // ustaw paczke na M
+            // przejdz do kolejnego panelu czyli do PanelDanePaczki
+            PaczkomatGUI.ramka.remove(this);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelDanePaczki);
+            PaczkomatGUI.ramka.revalidate();
+            PaczkomatGUI.ramka.repaint();
+        });
+
+        // ButtonS onClick
+        buttonS.addActionListener(e -> {
+            // ustaw paczke na S
+            // przejdz do kolejnego panelu czyli do PanelDanePaczki
+            PaczkomatGUI.ramka.remove(this);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelDanePaczki);
+            PaczkomatGUI.ramka.revalidate();
+            PaczkomatGUI.ramka.repaint();
+        });
+
         // To sprawia ze mozemy ulozyc elementy w gridzie
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 30, 0); // Ustawienie odstępów między przyciskami
@@ -61,6 +103,8 @@ public class PanelWybierzPaczke extends JPanel {
         add(buttonM, gbc);
         gbc.gridy = 3; // wiersz 3
         add(buttonS, gbc);
+        gbc.gridy = 4; // wiersz 4
+        add(przyciskPowrot, gbc);
     }
 }
 

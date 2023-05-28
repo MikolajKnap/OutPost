@@ -9,14 +9,14 @@ public class PaczkomatGUI {
     static final PanelOutpost panelOutpost = new PanelOutpost();
     static final Ramka ramka =  new Ramka();
     static final PanelGlowny panelGlowny = new PanelGlowny();
-    static final PrzyciskADMIN przyciskADMIN = new PrzyciskADMIN();
     static final PanelWybierzPaczke panelWybierzPaczke = new PanelWybierzPaczke();
-    static final PrzyciskPowrot przyciskPowrot = new PrzyciskPowrot();
+    static final PanelDanePaczki panelDanePaczki = new PanelDanePaczki();
+    static final PanelPowrotZatwierdz panelPowrotZatwierdz = new PanelPowrotZatwierdz();
 
     public static void main(String[] args) {
         ramka.add(panelOutpost, BorderLayout.NORTH);
         ramka.add(panelGlowny, BorderLayout.CENTER);
-        ramka.add(przyciskADMIN, BorderLayout.SOUTH);
+        // ramka.add(panelDanePaczki, BorderLayout.CENTER);
         ramka.setVisible(true);
     }
 }
