@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Initial commit - Testing swing">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/status_26_05.PNG" afterDir="false" />
+    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Trying to create first window with 2 buttons">
+      <change afterPath="$PROJECT_DIR$/src/outPost/PanelOdbierzPaczke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/outPost/PrzyciskDefault.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/outPost/PrzyciskNadaj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/outPost/PrzyciskOdbierz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/PanelGlowny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PanelGlowny.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/PrzyciskADMIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PrzyciskADMIN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/PrzyciskPowrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PrzyciskPowrot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/Ramka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Ramka.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test_branch" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -57,6 +68,26 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="PaczkomatGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="outPost.PaczkomatGUI" />
+      <module name="OutPost" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="outPost.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PaczkomatGUI" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,12 +104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1685049751104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Trying to create first window with 2 buttons">
+      <created>1685136348002</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685136348002</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit - Testing swing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit - Testing swing" />
+    <MESSAGE value="Trying to create first window with 2 buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to create first window with 2 buttons" />
   </component>
 </project>

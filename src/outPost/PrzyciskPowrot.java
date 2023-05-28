@@ -20,8 +20,8 @@ public class PrzyciskPowrot extends JButton {
         addActionListener(e -> {
             PaczkomatGUI.ramka.remove(PaczkomatGUI.przyciskPowrot);
             PaczkomatGUI.ramka.remove(PaczkomatGUI.panelWybierzPaczke);
+            PaczkomatGUI.ramka.remove(PaczkomatGUI.panelOdbierzPaczke);
             PaczkomatGUI.ramka.add(PaczkomatGUI.panelGlowny, BorderLayout.CENTER);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.przyciskADMIN, BorderLayout.SOUTH);
             PaczkomatGUI.ramka.revalidate();
             PaczkomatGUI.ramka.repaint();
         });
