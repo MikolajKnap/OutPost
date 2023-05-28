@@ -1,6 +1,3 @@
-# OutPost
-### Status z 27.05
-![image](https://github.com/MikolajKnap/OutPost/assets/73618404/a383a892-2bc8-467f-8a85-e69acf109883)
 
 ### Status z 28.05
 ![image](https://github.com/MikolajKnap/OutPost/assets/73618404/5d4c0271-f90e-47f0-9a69-820aacc8304d)
