@@ -1,13 +1,16 @@
 package outPost;
 
+import outPost.buttons.PrzyciskBazowy;
+import outPost.buttons.PrzyciskPowrot;
+import outPost.buttons.PrzyciskZatwierdz;
+
 import java.awt.BorderLayout;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class PanelPowrotZatwierdz extends JPanel {
-    public JButton buttonZatwierdz;
-    public JButton buttonPowrot;
+    public PrzyciskBazowy buttonZatwierdz, buttonPowrot;
 
     public PanelPowrotZatwierdz() {
         // Ustawienie atrybutow JPanel

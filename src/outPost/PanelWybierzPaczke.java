@@ -1,4 +1,7 @@
 package outPost;
+import outPost.buttons.PrzyciskBazowy;
+import outPost.buttons.PrzyciskPowrot;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,54 +15,42 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 public class PanelWybierzPaczke extends JPanel {
     private JLabel napisWyboru;
-    private JButton buttonXXL;
-    private JButton buttonM;
-    private JButton buttonS;
+    private PrzyciskBazowy buttonXXL,buttonM,buttonS;
     private JButton przyciskPowrot;
 
     public PanelWybierzPaczke() {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
         setLayout(new GridBagLayout());
 
-        // Tworze przycisk powrot i ustawiam jego onClick
-        przyciskPowrot = new PrzyciskPowrot();
-        przyciskPowrot.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelGlowny, BorderLayout.CENTER);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
+        // ------------------------Napisy----------------------------
 
         // Napis wyboru
         napisWyboru = new JLabel("Wybierz rozmiar paczki!");
         napisWyboru.setFont(new Font(Font.DIALOG, Font.PLAIN, 30));
         napisWyboru.setHorizontalAlignment(JLabel.CENTER);
 
+
+        // ------------------------Przyciski----------------------------
+
         // Tworzenie button1 - XXL
-        buttonXXL = new JButton("XXL");
-        buttonXXL.setBackground(PaczkomatGUI.kolorPrzyciskow);
-        buttonXXL.setForeground(Color.DARK_GRAY);
-        buttonXXL.setFont(new Font("Tahoma", Font.BOLD, 32));
-        buttonXXL.setFocusPainted(false);
+        buttonXXL = new PrzyciskBazowy("XXL");
 
-        // // Tworzenie button2 - M
-        buttonM = new JButton("M");
-        buttonM.setBackground(PaczkomatGUI.kolorPrzyciskow);
-        buttonM.setForeground(Color.DARK_GRAY);
-        buttonM.setFont(new Font("Tahoma", Font.BOLD, 32));
-        buttonM.setFocusPainted(false);
+        // Tworzenie button2 - M
+        buttonM = new PrzyciskBazowy("M");
 
-        // // Tworzenie button3 - S
-        buttonS = new JButton("S");
-        buttonS.setBackground(PaczkomatGUI.kolorPrzyciskow);
-        buttonS.setForeground(Color.DARK_GRAY);
-        buttonS.setFont(new Font("Tahoma", Font.BOLD, 32));
-        buttonS.setFocusPainted(false);
+        // Tworzenie button3 - S
+        buttonS = new PrzyciskBazowy("S");
+
+        // Tworzenie button4 - Powrot
+        przyciskPowrot = new PrzyciskPowrot();
 
         // Ustawienie preferowanych rozmiarów przycisków
-        buttonXXL.setPreferredSize(new Dimension(500, 80));
-        buttonM.setPreferredSize(new Dimension(500, 80));
-        buttonS.setPreferredSize(new Dimension(500, 80));
+        buttonXXL.setPreferredSize(new Dimension(150, 50));
+        buttonM.setPreferredSize(new Dimension(150, 50));
+        buttonS.setPreferredSize(new Dimension(150, 50));
+
+
+        // -----------------Action Listenery Przyciskow------------------
 
         // ButtonXXL onClick
         buttonXXL.addActionListener(e -> {
@@ -90,6 +81,17 @@ public class PanelWybierzPaczke extends JPanel {
             PaczkomatGUI.ramka.revalidate();
             PaczkomatGUI.ramka.repaint();
         });
+
+        // ButtonPowrot onClick
+        przyciskPowrot.addActionListener(e -> {
+            PaczkomatGUI.ramka.remove(this);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelGlowny, BorderLayout.CENTER);
+            PaczkomatGUI.ramka.revalidate();
+            PaczkomatGUI.ramka.repaint();
+        });
+
+
+        // ---------------------------Grid--------------------------------
 
         // To sprawia ze mozemy ulozyc elementy w gridzie
         GridBagConstraints gbc = new GridBagConstraints();

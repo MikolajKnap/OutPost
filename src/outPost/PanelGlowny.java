@@ -1,5 +1,10 @@
 package outPost;
 
+import outPost.buttons.PrzyciskADMIN;
+import outPost.buttons.PrzyciskBazowy;
+import outPost.buttons.PrzyciskNadajPaczke;
+import outPost.buttons.PrzyciskOdbierzPaczke;
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -14,47 +19,42 @@ import javax.swing.JPanel;
 
 public class PanelGlowny extends JPanel{
     private JLabel napisWyboru;
-    private JButton buttonOdbierz;
-    private JButton buttonNadaj;
-    private JButton przyciskADMIN;
+    private PrzyciskBazowy buttonOdbierz, buttonNadaj, przyciskADMIN;
 
     public PanelGlowny() {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
         setLayout(new GridBagLayout());
 
-        // Przycisk ADMIN
-        przyciskADMIN = new PrzyciskADMIN();
+        // --------------------------Napisy--------------------------------
 
         // Napis wyboru
         napisWyboru = new JLabel("Co chciałbyś dzisiaj zrobić?");
         napisWyboru.setFont(new Font(Font.DIALOG, Font.PLAIN, 30));
         napisWyboru.setHorizontalAlignment(JLabel.CENTER);
 
+
+        // ------------------------Przyciski----------------------------
+
         // Tworzenie button1 - odbierz paczke
-        buttonOdbierz = new JButton("Odbierz paczkę");
-        buttonOdbierz.setBackground(PaczkomatGUI.kolorPrzyciskow);
-        buttonOdbierz.setForeground(Color.DARK_GRAY);
-        buttonOdbierz.setFont(new Font("Tahoma", Font.BOLD, 32));
-        buttonOdbierz.setFocusPainted(false);
+        buttonOdbierz = new PrzyciskOdbierzPaczke();
 
-        // // Tworzenie button2 - odbierz paczke
-        buttonNadaj = new JButton("Nadaj paczkę");
-        buttonNadaj.setBackground(PaczkomatGUI.kolorPrzyciskow);
-        buttonNadaj.setForeground(Color.DARK_GRAY);
-        buttonNadaj.setFont(new Font("Tahoma", Font.BOLD, 32));
-        buttonNadaj.setFocusPainted(false);
+        // // Tworzenie button2 - nadaj paczke
+        buttonNadaj = new PrzyciskNadajPaczke();
 
-        // buttonNadaj onClick
+        // Przycisk ADMIN
+        przyciskADMIN = new PrzyciskADMIN();
+
+
+        // -----------------Action Listenery Przyciskow------------------
+
         buttonNadaj.addActionListener(e -> {
             PaczkomatGUI.ramka.remove(this);
             PaczkomatGUI.ramka.add(PaczkomatGUI.panelWybierzPaczke, BorderLayout.CENTER);
             PaczkomatGUI.ramka.revalidate();
             PaczkomatGUI.ramka.repaint();
         });
-    
-        // Ustawienie preferowanych rozmiarów przycisków
-        buttonOdbierz.setPreferredSize(new Dimension(500, 80));
-        buttonNadaj.setPreferredSize(new Dimension(500, 80));
+
+        // ---------------------------Grid--------------------------------
 
         // To sprawia ze mozemy ulozyc elementy w gridzie
         GridBagConstraints gbc = new GridBagConstraints();
