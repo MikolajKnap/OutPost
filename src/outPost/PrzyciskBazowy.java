@@ -6,7 +6,7 @@ import java.awt.Font;
 
 import javax.swing.JButton;
 
-public class PrzyciskBazowy  extends JButton{
+public class PrzyciskBazowy  extends JButton {
     public PrzyciskBazowy() {
         setBackground(PaczkomatGUI.kolorPrzyciskow);
         setForeground(Color.DARK_GRAY);
@@ -14,5 +14,4 @@ public class PrzyciskBazowy  extends JButton{
         setFocusPainted(false);
         setPreferredSize(new Dimension(250, 50));
     }
-
 }

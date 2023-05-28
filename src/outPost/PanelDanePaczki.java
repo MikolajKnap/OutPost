@@ -49,7 +49,7 @@ public class PanelDanePaczki extends JPanel{
         napisTelefonOdbiorcy.setFont(new Font(Font.DIALOG, Font.BOLD, 20));
         napisTelefonOdbiorcy.setHorizontalAlignment(JLabel.CENTER);
         // Napis kodPaczkomatu
-        JLabel napisKodPaczkomatu  = new JLabel("Wpisz numer odbiorcy:");
+        JLabel napisKodPaczkomatu  = new JLabel("Wpisz kod paczkomatu:");
         napisKodPaczkomatu .setFont(new Font(Font.DIALOG, Font.BOLD, 20));
         napisKodPaczkomatu .setHorizontalAlignment(JLabel.CENTER);
 
