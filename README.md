@@ -4,6 +4,6 @@
 
 ![image](https://github.com/MikolajKnap/OutPost/assets/73618404/bc8e3ced-ef21-4fac-a5c9-248f9e21ac2f)
 
-![image](https://github.com/MikolajKnap/OutPost/assets/73618404/ab8f24bb-eef2-4692-929b-15978c1a9e31)
+![image](https://github.com/MikolajKnap/OutPost/assets/73618404/25885c0e-89fa-4327-8861-8497ee73ace3)
 
 ![image](https://github.com/MikolajKnap/OutPost/assets/73618404/7c959dd2-2a71-4ff7-a20a-15b79efba200)
