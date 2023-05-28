@@ -1,7 +1,6 @@
 package outPost;
 
 import java.awt.BorderLayout;
-import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -17,6 +16,7 @@ public class PrzyciskPowrot extends JButton {
         setFocusPainted(false);
         setPreferredSize(new Dimension(200, 50));
 
+        // buttonPowrot onClick
         addActionListener(e -> {
             PaczkomatGUI.ramka.remove(PaczkomatGUI.przyciskPowrot);
             PaczkomatGUI.ramka.remove(PaczkomatGUI.panelWybierzPaczke);

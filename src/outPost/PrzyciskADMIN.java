@@ -27,7 +27,5 @@ public class PrzyciskADMIN extends JButton {
         setFont(new Font("Tahoma", Font.BOLD, 32));
         setFocusPainted(false);
         setPreferredSize(new Dimension(200, 50));
-
-
     }
 }

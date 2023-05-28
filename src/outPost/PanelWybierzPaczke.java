@@ -53,13 +53,13 @@ public class PanelWybierzPaczke extends JPanel {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 30, 0); // Ustawienie odstępów między przyciskami
 
-        gbc.gridy = 0; // wiersz 0 - to sprawia ze te 3 elementy nie nachodza na siebie a są pod sobą
+        gbc.gridy = 0; // wiersz 0 - to sprawia ze te 4 elementy nie nachodza na siebie a są pod sobą
         add(napisWyboru, gbc);
         gbc.gridy = 1; // wiersz 1
         add(buttonXXL, gbc);
         gbc.gridy = 2; // wiersz 2
         add(buttonM, gbc);
-        gbc.gridy = 3; // wiersz 2
+        gbc.gridy = 3; // wiersz 3
         add(buttonS, gbc);
     }
 }

@@ -39,6 +39,7 @@ public class PanelGlowny extends JPanel{
         buttonNadaj.setFont(new Font("Tahoma", Font.BOLD, 32));
         buttonNadaj.setFocusPainted(false);
 
+        // buttonNadaj onClick
         buttonNadaj.addActionListener(e -> {
             PaczkomatGUI.ramka.remove(this);
             PaczkomatGUI.ramka.remove(PaczkomatGUI.przyciskADMIN);
@@ -63,9 +64,6 @@ public class PanelGlowny extends JPanel{
         add(buttonOdbierz, gbc);
         gbc.gridy = 2; // wiersz 2
         add(buttonNadaj, gbc);
-
-    }
-    void buttonNadajOnClick() {
 
     }
 }
