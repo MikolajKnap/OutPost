@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Initial commit - Testing swing">
-      <change afterPath="$PROJECT_DIR$/src/outPost/buttons/PrzyciskADMIN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/outPost/buttons/PrzyciskNadajPaczke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/outPost/buttons/PrzyciskOdbierzPaczke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/outPost/fields/PoleTekstoweBazowe.java" afterDir="false" />
+    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej">
+      <change afterPath="$PROJECT_DIR$/src/outPost/PanelOdbioru.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/outPost/PanelOtwarciaSkrytki.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PanelDanePaczki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PanelDanePaczki.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/outPost/PanelGlowny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PanelGlowny.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PanelPowrotZatwierdz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PanelPowrotZatwierdz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PanelWybierzPaczke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PanelWybierzPaczke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PrzyciskADMIN.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PrzyciskBazowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/buttons/PrzyciskBazowy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PrzyciskPowrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/buttons/PrzyciskPowrot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PrzyciskZatwierdz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/buttons/PrzyciskZatwierdz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +22,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="test_branch" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -88,12 +82,20 @@
       <option name="project" value="LOCAL" />
       <updated>1685049751104</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej">
+      <created>1685276574839</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685276574839</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit - Testing swing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit - Testing swing" />
+    <MESSAGE value="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej" />
+    <option name="LAST_COMMIT_MESSAGE" value="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej" />
   </component>
 </project>
