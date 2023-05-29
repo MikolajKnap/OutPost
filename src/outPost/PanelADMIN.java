@@ -16,7 +16,7 @@ public class PanelADMIN extends JPanel {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
         setLayout(new BorderLayout());
 
-        // Label z wyswietlona kwota do zaplaty
+        // Header
         labelADMIN = new JLabel("PACZKI W PACZKOMACIE:");
         labelADMIN.setFont(new Font(Font.DIALOG, Font.BOLD, 28));
         labelADMIN.setHorizontalAlignment(JLabel.CENTER);

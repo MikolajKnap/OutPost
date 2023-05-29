@@ -58,7 +58,6 @@ public class PanelGlowny extends JPanel{
             PaczkomatGUI.ramka.repaint();
         });
         
-
         // ---------------------------Grid--------------------------------
 
         // To sprawia ze mozemy ulozyc elementy w gridzie
