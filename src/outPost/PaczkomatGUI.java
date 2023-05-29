@@ -17,6 +17,7 @@ public class PaczkomatGUI {
     static final PanelADMIN panelADMIN = new PanelADMIN();
     static final PanelOdbioru panelOdbioru = new PanelOdbioru();
     static final PanelOtwarciaSkrytki panelOtwarciaSkrytki = new PanelOtwarciaSkrytki();
+    static final PanelPIN panelPIN = new PanelPIN();
     public static void main(String[] args) {
         ramka.add(panelOutpost, BorderLayout.NORTH);
         ramka.add(panelGlowny, BorderLayout.CENTER);

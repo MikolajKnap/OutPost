@@ -60,7 +60,7 @@ public class PanelGlowny extends JPanel{
 
         buttonADMIN.addActionListener(e -> {
             PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelADMIN);
+            PaczkomatGUI.ramka.add(PaczkomatGUI.panelPIN);
             PaczkomatGUI.ramka.revalidate();
             PaczkomatGUI.ramka.repaint();
         });
