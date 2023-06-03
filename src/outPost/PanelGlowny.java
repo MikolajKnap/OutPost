@@ -15,8 +15,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PanelGlowny extends JPanel{
-    private JLabel napisWyboru;
-    private PrzyciskBazowy buttonOdbierz, buttonNadaj, buttonADMIN;
+    JLabel napisWyboru;
+    PrzyciskBazowy buttonOdbierz, buttonNadaj, buttonADMIN;
 
     public PanelGlowny() {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
@@ -41,30 +41,9 @@ public class PanelGlowny extends JPanel{
         // Przycisk ADMIN
         buttonADMIN = new PrzyciskADMIN();
 
-
         // -----------------Action Listenery Przyciskow------------------
 
-        buttonNadaj.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelWybierzPaczke, BorderLayout.CENTER);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
 
-        buttonOdbierz.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelOdbioru, BorderLayout.CENTER);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-
-        buttonADMIN.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelPIN);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-        
         // ---------------------------Grid--------------------------------
 
         // To sprawia ze mozemy ulozyc elementy w gridzie

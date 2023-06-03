@@ -8,8 +8,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PanelOdbioru extends JPanel {
-    private PanelPowrotZatwierdz dolnyPanel;
-    private PoleTekstoweBazowe poleTelefon, poleKodOdbioru;
+    PanelPowrotZatwierdz dolnyPanel;
+    PoleTekstoweBazowe poleTelefon, poleKodOdbioru;
 
     public PanelOdbioru() {
         setLayout(new GridBagLayout());
@@ -18,42 +18,6 @@ public class PanelOdbioru extends JPanel {
         // Tworze panel dolny(przycsik powrot i zatwierdz) i dodaje onClicki
         dolnyPanel = new PanelPowrotZatwierdz();
 
-        // -----------------Action Listenery Przyciskow----------------------
-        dolnyPanel.buttonPowrot.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelGlowny);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-
-        // Zatwierdz onClick() wyswietla wpisane dane
-        dolnyPanel.buttonZatwierdz.addActionListener(e -> {
-            System.out.println(String.format("Kod odbioru: %s\nNr telefonu: %s",
-                    poleKodOdbioru.getText(), poleTelefon.getText()));
-
-            // Sprawdzanie czy kodOdbioru sie zgadza
-            // Jesli nie to wyswietlic komunikat (jesli jest taka opcja w swingu) ze kod odbioru bledny
-            // (jesli nie ma takiej opcji w swingu to zrobimy inny panel ktory bedzie mial napisane ze nie ma)
-            // Tutaj zakladamy na razie ze jest taka skrytka
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelOtwarciaSkrytki);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-            // Zamkniecie po 5 sekundach
-            // Z pomoca chatu napisane wyglada fajnie i dziala
-            // Bo inne sposoby zawieszaly GUI
-            Timer timer = new Timer(5000, new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    PaczkomatGUI.ramka.remove(PaczkomatGUI.panelOtwarciaSkrytki);
-                    PaczkomatGUI.ramka.add(PaczkomatGUI.panelGlowny);
-                    PaczkomatGUI.ramka.revalidate();
-                    PaczkomatGUI.ramka.repaint();
-                }
-            });
-            timer.setRepeats(false);
-            timer.start();
-        });
 
         // --------------------------Napisy--------------------------------
         // Napis kodu odbioru

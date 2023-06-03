@@ -12,9 +12,9 @@ import javax.swing.JPanel;
 import outPost.buttons.PrzyciskPowrot;
 
 public class PanelKoniecNadania extends JPanel {
-    private JButton buttonPowrot;
-    private JLabel labelPlatnosc;
-    private JLabel labelPlatnosc2;
+    JButton buttonPowrot;
+    JLabel labelPlatnosc;
+    JLabel labelPlatnosc2;
 
     public PanelKoniecNadania() {
         setLayout(new GridBagLayout());
@@ -22,14 +22,6 @@ public class PanelKoniecNadania extends JPanel {
 
         // Buttony
         buttonPowrot = new PrzyciskPowrot();
-
-        // Powrot onClick
-        buttonPowrot.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelGlowny);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
 
         // Label z wyswietlona kwota do zaplaty
         labelPlatnosc = new JLabel("PLATNOSC ZAAKCEPTOWANA");

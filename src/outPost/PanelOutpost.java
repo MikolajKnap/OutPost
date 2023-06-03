@@ -5,7 +5,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PanelOutpost extends JPanel {
-    public JLabel tytul;
+    JLabel tytul;
     public PanelOutpost() {
         // Ustawienie background kolor panelu
         setBackground(PaczkomatGUI.kolorTlaTytulu);

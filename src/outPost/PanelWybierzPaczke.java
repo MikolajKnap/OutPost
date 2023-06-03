@@ -13,9 +13,9 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 public class PanelWybierzPaczke extends JPanel {
-    private JLabel napisWyboru;
-    private PrzyciskBazowy buttonXXL,buttonM,buttonS;
-    private JButton przyciskPowrot;
+    JLabel napisWyboru;
+    PrzyciskBazowy buttonXXL,buttonM,buttonS;
+    JButton przyciskPowrot;
 
     public PanelWybierzPaczke() {
         setBackground(PaczkomatGUI.kolorTlaTytulu);
@@ -47,48 +47,6 @@ public class PanelWybierzPaczke extends JPanel {
         buttonXXL.setPreferredSize(new Dimension(150, 50));
         buttonM.setPreferredSize(new Dimension(150, 50));
         buttonS.setPreferredSize(new Dimension(150, 50));
-
-
-        // -----------------Action Listenery Przyciskow------------------
-
-        // ButtonXXL onClick
-        buttonXXL.addActionListener(e -> {
-            // ustaw paczke na XXL
-            // przejdz do kolejnego panelu czyli do PanelDanePaczki
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelDanePaczki);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-
-        // ButtonM onClick
-        buttonM.addActionListener(e -> {
-            // ustaw paczke na M
-            // przejdz do kolejnego panelu czyli do PanelDanePaczki
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelDanePaczki);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-
-        // ButtonS onClick
-        buttonS.addActionListener(e -> {
-            // ustaw paczke na S
-            // przejdz do kolejnego panelu czyli do PanelDanePaczki
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelDanePaczki);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-
-        // ButtonPowrot onClick
-        przyciskPowrot.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelGlowny, BorderLayout.CENTER);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-
 
         // ---------------------------Grid--------------------------------
 

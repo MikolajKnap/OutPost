@@ -12,11 +12,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class PanelDanePaczki extends JPanel{
-    private String nrTelefonuNadawcy;
-    private String nrTelefonuOdbiorcy;
-    private String kodPaczkomatu;
-    private PanelPowrotZatwierdz dolnyPanel;
-    private PoleTekstoweBazowe poleTelefonNadawcy, poleTelefonOdbiorcy, poleKodPaczkomatu;
+
+    PanelPowrotZatwierdz dolnyPanel;
+    PoleTekstoweBazowe poleTelefonNadawcy, poleTelefonOdbiorcy, poleKodPaczkomatu;
 
     public PanelDanePaczki() {
         setLayout(new GridBagLayout());
@@ -25,24 +23,6 @@ public class PanelDanePaczki extends JPanel{
         // Tworze panel dolny(przycsik powrot i zatwierdz) i dodaje onClicki
         dolnyPanel = new PanelPowrotZatwierdz();
 
-        // -----------------Action Listenery Przyciskow----------------------
-        dolnyPanel.buttonPowrot.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelWybierzPaczke);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-
-        // Zatwierdz onClick() wyswietla wpisane dane
-        dolnyPanel.buttonZatwierdz.addActionListener(e -> {
-            System.out.println(String.format("Nr telefonu nadawcy: %s\nNr telefonu odbiorcy: %s\nKod Paczkomatu: %s",
-                    poleTelefonNadawcy.getText(), poleTelefonOdbiorcy.getText(), poleKodPaczkomatu.getText()));
-
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelPlatnosc);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
 
         // --------------------------Napisy--------------------------------
         // Napis NrNadawcy

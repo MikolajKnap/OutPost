@@ -13,10 +13,10 @@ import outPost.buttons.PrzyciskBazowy;
 import outPost.buttons.PrzyciskPowrot;
 
 public class PanelPlatnosc extends JPanel {
-    private JButton buttonPowrot;
-    private JButton buttonZaplac;
-    private JLabel labelKwota;
-    private double kwotaDoZaplaty;
+    JButton buttonPowrot;
+    JButton buttonZaplac;
+    JLabel labelKwota;
+    double kwotaDoZaplaty;
 
     public PanelPlatnosc() {
         setLayout(new GridBagLayout());
@@ -26,21 +26,6 @@ public class PanelPlatnosc extends JPanel {
         // Buttony
         buttonPowrot = new PrzyciskPowrot();
         buttonZaplac = new PrzyciskBazowy("ZAPLAC KARTA");
-
-        // Powrot onClick
-        buttonPowrot.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelDanePaczki);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint();
-        });
-
-        buttonZaplac.addActionListener(e -> {
-            PaczkomatGUI.ramka.remove(this);
-            PaczkomatGUI.ramka.add(PaczkomatGUI.panelKoniecNadania);
-            PaczkomatGUI.ramka.revalidate();
-            PaczkomatGUI.ramka.repaint(); 
-        });
 
         // Label z wyswietlona kwota do zaplaty
         labelKwota = new JLabel("KWOTA DO ZAPLATY: " + kwotaDoZaplaty);
