@@ -13,18 +13,18 @@ import javax.swing.*;
 public class PaczkomatGUI {
     static final public Color kolorTlaTytulu = new Color(255, 224, 179);
     static final public Color kolorPrzyciskow = new Color(255, 218, 137);
-    final PanelOutpost panelOutpost;
     final Ramka ramka;
-    final PanelGlowny panelGlowny;
-    final PanelWybierzPaczke panelWybierzPaczke;
-    final PanelDanePaczki panelDanePaczki;
-    final PanelPowrotZatwierdz panelPowrotZatwierdz;
-    final PanelPlatnosc panelPlatnosc;
-    final PanelKoniecNadania panelKoniecNadania;
-    final PanelADMIN panelADMIN;
-    final PanelOdbioru panelOdbioru;
-    final PanelOtwarciaSkrytki panelOtwarciaSkrytki;
     final PanelPIN panelPIN;
+    final PanelADMIN panelADMIN;
+    final PanelGlowny panelGlowny;
+    final PanelOutpost panelOutpost;
+    final PanelOdbioru panelOdbioru;
+    final PanelPlatnosc panelPlatnosc;
+    final PanelDanePaczki panelDanePaczki;
+    final PanelKoniecNadania panelKoniecNadania;
+    final PanelWybierzPaczke panelWybierzPaczke;
+    final PanelPowrotZatwierdz panelPowrotZatwierdz;
+    final PanelOtwarciaSkrytki panelOtwarciaSkrytki;
 
     String nrTelefonuNadawcy;
     String nrTelefonuOdbiorcy;
