@@ -31,8 +31,6 @@ public class PaczkomatGUI {
     String kodPaczkomatuDocelowego;
     // ------------------------------- PACZKOMAT ----------------------------------------
     ArrayList<Paczka> listaPaczek;
-    Paczka paczkaDoDodania;
-
 
     public PaczkomatGUI(String nazwaPaczkomatu) {
         ramka =  new Ramka();
