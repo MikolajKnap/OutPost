@@ -37,7 +37,8 @@ public abstract class Paczka implements Serializable {
         return "Paczka\n" +
                 "numerOdbiorcy =" + numerTelefonuOdbiorcy +
                 " numerNadawcy =" + numerTelefonuNadawcy +
-                " kodPaczkomatu =" + kodPaczkomatuDocelowego;
+                " kodPaczkomatuDoc =" + kodPaczkomatuDocelowego +
+                " czyDostarczona =" + isDostarczona();
     }
 
     public double getRozmiarWysokosc() {
@@ -87,4 +88,23 @@ public abstract class Paczka implements Serializable {
     public void setKodPaczkomatuDocelowego(String kodPaczkomatuDocelowego) {
         this.kodPaczkomatuDocelowego = kodPaczkomatuDocelowego;
     }
+    public void setRozmiarWysokosc(double rozmiarWysokosc) {
+        this.rozmiarWysokosc = rozmiarWysokosc;
+    }
+    public void setRozmiarSzerokosc(double rozmiarSzerokosc) {
+        this.rozmiarSzerokosc = rozmiarSzerokosc;
+    }
+    public void setRozmiarGlebokosc(double rozmiarGlebokosc) {
+        this.rozmiarGlebokosc = rozmiarGlebokosc;
+    }
+    public void setKodPaczkomatuNadajcego(String kodPaczkomatuNadajcego) {
+        this.kodPaczkomatuNadajcego = kodPaczkomatuNadajcego;
+    }
+    public void setDostarczona(boolean dostarczona) {
+        this.dostarczona = dostarczona;
+    }
+    public void setKodOdbioru(String kodOdbioru) {
+        this.kodOdbioru = kodOdbioru;
+    }
+    
 }

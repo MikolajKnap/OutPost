@@ -6,35 +6,40 @@ import outPost.paczki.PaczkaXXL;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import javax.swing.*;
 
 public class PaczkomatGUI {
     static final public Color kolorTlaTytulu = new Color(255, 224, 179);
     static final public Color kolorPrzyciskow = new Color(255, 218, 137);
-    final PanelOutpost panelOutpost;
     final Ramka ramka;
-    final PanelGlowny panelGlowny;
-    final PanelWybierzPaczke panelWybierzPaczke;
-    final PanelDanePaczki panelDanePaczki;
-    final PanelPowrotZatwierdz panelPowrotZatwierdz;
-    final PanelPlatnosc panelPlatnosc;
-    final PanelKoniecNadania panelKoniecNadania;
-    final PanelADMIN panelADMIN;
-    final PanelOdbioru panelOdbioru;
-    final PanelOtwarciaSkrytki panelOtwarciaSkrytki;
     final PanelPIN panelPIN;
+    final PanelADMIN panelADMIN;
+    final PanelGlowny panelGlowny;
+    final PanelOutpost panelOutpost;
+    final PanelOdbioru panelOdbioru;
+    final PanelPlatnosc panelPlatnosc;
+    final PanelDanePaczki panelDanePaczki;
+    final PanelKoniecNadania panelKoniecNadania;
+    final PanelWybierzPaczke panelWybierzPaczke;
+    final PanelPowrotZatwierdz panelPowrotZatwierdz;
+    final PanelOtwarciaSkrytki panelOtwarciaSkrytki;
 
+    // Paczka
     String nrTelefonuNadawcy;
     String nrTelefonuOdbiorcy;
     String kodPaczkomatuDocelowego;
-    // ------------------------------- PACZKOMAT ----------------------------------------
+
+    // Paczkomat
+    String kodPaczkomatu;
     ArrayList<Paczka> listaPaczek;
-    Paczka paczkaDoDodania;
 
 
-    public PaczkomatGUI(String nazwaPaczkomatu) {
+    // ------------------------------- PACZKOMAT ----------------------------------------
+
+   
+
+    public PaczkomatGUI(String nazwaPaczkomatu, String kodPaczkomatu) {
         ramka =  new Ramka();
         panelPIN = new PanelPIN();
         panelADMIN = new PanelADMIN();
@@ -49,8 +54,8 @@ public class PaczkomatGUI {
         panelOtwarciaSkrytki = new PanelOtwarciaSkrytki();
 
         ramka.setTitle(nazwaPaczkomatu);
+        this.kodPaczkomatu = kodPaczkomatu;
         listaPaczek = new ArrayList<>();
-
 
 
 //--------------------------------- ACTION LISTENERY GUI ----------------------------------------
@@ -97,6 +102,9 @@ public class PaczkomatGUI {
         });
 
         panelGlowny.buttonADMIN.addActionListener(e -> {
+            panelADMIN.listaPaczek = listaPaczek;
+            panelADMIN.setTekstPaczek();
+            System.out.println(listaPaczek.toString());
             ramka.remove(panelGlowny);
             ramka.add(panelPIN);
             redraw();
@@ -152,10 +160,9 @@ public class PaczkomatGUI {
 
         panelPlatnosc.buttonZaplac.addActionListener(e -> {
             // Dodaj paczke do listyPaczek po zakonczonym nadaniu, do zoptymalizowania
-            Paczka paczkaDoNadania = new PaczkaXXL(kodPaczkomatuDocelowego, nrTelefonuNadawcy, nrTelefonuOdbiorcy);
+            Paczka paczkaDoNadania = new PaczkaXXL(kodPaczkomatuDocelowego, nrTelefonuNadawcy, nrTelefonuOdbiorcy, kodPaczkomatu);
             listaPaczek.add(paczkaDoNadania);
-            panelADMIN.listaPaczek.add(paczkaDoNadania);
-            panelADMIN.setTekstPaczek();
+            
 
             ramka.remove(panelPlatnosc);
             ramka.add(panelKoniecNadania);
@@ -218,4 +225,15 @@ public class PaczkomatGUI {
         ramka.revalidate();
         ramka.repaint();
     }
+    public String getKodPaczkomatu() {
+        return kodPaczkomatu;
+    }
+    public ArrayList<Paczka> getListaPaczek() {
+        return listaPaczek;
+    }
+
+    public void setListaPaczek(ArrayList<Paczka> listaPaczek) {
+        this.listaPaczek = listaPaczek;
+    }
+    
 }

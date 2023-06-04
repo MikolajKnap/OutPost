@@ -57,7 +57,6 @@ public class PanelADMIN extends JPanel {
         }
         paczki += "</html>";
 
-        System.out.println(listaPaczek.toString());
         labelPaczki.setText(paczki);
         panelPaczki.add(labelPaczki, BorderLayout.NORTH);
     }

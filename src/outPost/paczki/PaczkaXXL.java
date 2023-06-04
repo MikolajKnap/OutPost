@@ -24,9 +24,11 @@ public class PaczkaXXL extends Paczka{
         rozmiarGlebokosc = glebokosc;
     }
 
-    public PaczkaXXL(String kodPaczkomatuDocelowego, String nrTelefonuNadawcy,String nrTelefonuOdbiorcy) {
+    public PaczkaXXL(String kodPaczkomatuDocelowego, String nrTelefonuNadawcy,String nrTelefonuOdbiorcy, String kodPaczkomatuNadajacego) {
         this.kodPaczkomatuDocelowego = kodPaczkomatuDocelowego;
         this.numerTelefonuNadawcy = nrTelefonuNadawcy;
         this.numerTelefonuOdbiorcy = nrTelefonuOdbiorcy;
+        this.kodPaczkomatuNadajcego = kodPaczkomatuNadajacego;
+        dostarczona = false;
     };
 }
