@@ -10,6 +10,8 @@ import java.awt.event.ActionListener;
 public class PanelOdbioru extends JPanel {
     PanelPowrotZatwierdz dolnyPanel;
     PoleTekstoweBazowe poleTelefon, poleKodOdbioru;
+    JLabel napisOdbioru, napisTelefon, zleDane;
+    GridBagConstraints gbc;
 
     public PanelOdbioru() {
         setLayout(new GridBagLayout());
@@ -21,14 +23,21 @@ public class PanelOdbioru extends JPanel {
 
         // --------------------------Napisy--------------------------------
         // Napis kodu odbioru
-        JLabel napisOdbioru = new JLabel("Wpisz kod odbioru:");
+        napisOdbioru = new JLabel("Wpisz kod odbioru:");
         napisOdbioru.setFont(new Font(Font.DIALOG, Font.BOLD, 20));
         napisOdbioru.setHorizontalAlignment(JLabel.CENTER);
 
         // Napis nr telefonu
-        JLabel napisTelefon  = new JLabel("Wpisz swój numer telefonu:");
+        napisTelefon  = new JLabel("Wpisz swój numer telefonu:");
         napisTelefon.setFont(new Font(Font.DIALOG, Font.BOLD, 20));
         napisTelefon.setHorizontalAlignment(JLabel.CENTER);
+
+        // Napis zle dane
+        zleDane = new JLabel("Brak paczki o takich danych :(");
+        zleDane.setFont(new Font(Font.DIALOG, Font.BOLD, 20));
+        zleDane.setHorizontalAlignment(JLabel.CENTER);
+        zleDane.setForeground(Color.red);
+
 
 
         // --------------------------Pola input------------------------------
@@ -38,7 +47,7 @@ public class PanelOdbioru extends JPanel {
 
         // ---------------------------Grid--------------------------------
 
-        GridBagConstraints gbc = new GridBagConstraints();
+        gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 0); // Ustawienie odstępów między przyciskami
 
         // grid y, ustawia wiersz w jakim ma byc element
@@ -56,5 +65,7 @@ public class PanelOdbioru extends JPanel {
 
         gbc.gridy = 7;
         add(dolnyPanel, gbc);
+
+        gbc.gridy = 8;
     }
 }

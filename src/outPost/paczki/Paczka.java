@@ -14,6 +14,7 @@ public abstract class Paczka implements Serializable {
     protected String kodPaczkomatuNadajcego;
 
     protected boolean dostarczona;
+    protected boolean odebrana;
 
     protected String kodOdbioru;
 
@@ -29,6 +30,7 @@ public abstract class Paczka implements Serializable {
         this.kodPaczkomatuNadajcego = kodPaczkomatuNadajcego;
         this.dostarczona = dostarczona;
         this.kodOdbioru = kodOdbioru;
+        this.odebrana = false;
     }
     public Paczka() {};
 
@@ -38,7 +40,8 @@ public abstract class Paczka implements Serializable {
                 "numerOdbiorcy =" + numerTelefonuOdbiorcy +
                 " numerNadawcy =" + numerTelefonuNadawcy +
                 " kodPaczkomatuDoc =" + kodPaczkomatuDocelowego +
-                " czyDostarczona =" + isDostarczona();
+                " czyDostarczona =" + isDostarczona() +
+                " czyOdebrana = " + isOdebrana();
     }
 
     public double getRozmiarWysokosc() {
@@ -106,5 +109,12 @@ public abstract class Paczka implements Serializable {
     public void setKodOdbioru(String kodOdbioru) {
         this.kodOdbioru = kodOdbioru;
     }
-    
+
+    public boolean isOdebrana() {
+        return odebrana;
+    }
+
+    public void setOdebrana(boolean odebrana) {
+        this.odebrana = odebrana;
+    }
 }

@@ -1,12 +1,15 @@
 package outPost;
 
 import outPost.paczki.Paczka;
+import outPost.paczki.PaczkaM;
+import outPost.paczki.PaczkaS;
 import outPost.paczki.PaczkaXXL;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Random;
 import javax.swing.*;
 
 public class PaczkomatGUI {
@@ -29,6 +32,9 @@ public class PaczkomatGUI {
     String nrTelefonuNadawcy;
     String nrTelefonuOdbiorcy;
     String kodPaczkomatuDocelowego;
+    String kodOdbioru;
+    int typPaczki;
+
 
     // Paczkomat
     String kodPaczkomatu;
@@ -121,33 +127,50 @@ public class PaczkomatGUI {
         panelOdbioru.dolnyPanel.buttonPowrot.addActionListener(e -> {
             ramka.remove(panelOdbioru);
             ramka.add(panelGlowny);
+            panelOdbioru.remove(panelOdbioru.zleDane);
             redraw();
         });
 
         panelOdbioru.dolnyPanel.buttonZatwierdz.addActionListener(e -> {
-            System.out.println(String.format("Kod odbioru: %s\nNr telefonu: %s",
-                    panelOdbioru. poleKodOdbioru.getText(), panelOdbioru.poleTelefon.getText()));
-
-            ramka.remove(panelOdbioru);
-            ramka.add(panelOtwarciaSkrytki);
-            redraw();
-            Timer timer = new Timer(5000, new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    ramka.remove(panelOtwarciaSkrytki);
-                    ramka.add(panelGlowny);
-                    redraw();
+            // ----------------- Sprawdzanie danych i usuwanie z listy --------------------------------
+            boolean flaga = false;
+            for (Paczka p : listaPaczek){
+                if(p.getKodOdbioru().equals(panelOdbioru.poleKodOdbioru.getText()) &&
+                   p.getNumerTelefonuOdbiorcy().equals(panelOdbioru.poleTelefon.getText()) &&
+                   p.isDostarczona()){
+                    listaPaczek.remove(p);
+                    p.setOdebrana(true);
+                    flaga = true;
+                    break;
                 }
-            });
-            timer.setRepeats(false);
-            timer.start();
+            }
+            if(!flaga){
+                panelOdbioru.add(panelOdbioru.zleDane,panelOdbioru.gbc);
+                redraw();
+            }
+            else{
+                ramka.remove(panelOdbioru);
+                ramka.add(panelOtwarciaSkrytki);
+                redraw();
+//                Timer timer = new Timer(5000, new ActionListener() {
+//                    @Override
+//                    public void actionPerformed(ActionEvent e) {
+//                        ramka.remove(panelOtwarciaSkrytki);
+//                        ramka.add(panelGlowny);
+//                        redraw();
+//                    }
+//                });
+//                timer.setRepeats(false);
+//                timer.start();
+            }
         });
 
         // ------------------------------- PANEL OTWARCIA SKRYTKI ----------------------------------------
         panelOtwarciaSkrytki.buttonPowrot.addActionListener(e -> {
             ramka.remove(panelOtwarciaSkrytki);
             ramka.add(panelGlowny);
-            redraw();ramka.repaint();
+            redraw();
+            ramka.repaint();
         });
 
         // ------------------------------- PANEL PLATNOSC ----------------------------------------
@@ -160,7 +183,14 @@ public class PaczkomatGUI {
 
         panelPlatnosc.buttonZaplac.addActionListener(e -> {
             // Dodaj paczke do listyPaczek po zakonczonym nadaniu, do zoptymalizowania
-            Paczka paczkaDoNadania = new PaczkaXXL(kodPaczkomatuDocelowego, nrTelefonuNadawcy, nrTelefonuOdbiorcy, kodPaczkomatu);
+            Paczka paczkaDoNadania;
+            stworzKodOdbioru();
+            switch (typPaczki){
+                case 1 -> paczkaDoNadania = new PaczkaXXL(nrTelefonuOdbiorcy,nrTelefonuNadawcy,kodPaczkomatuDocelowego,kodPaczkomatu,false,kodOdbioru);
+                case 2 -> paczkaDoNadania = new PaczkaM(nrTelefonuOdbiorcy,nrTelefonuNadawcy,kodPaczkomatuDocelowego,kodPaczkomatu,false,kodOdbioru);
+                case 3 -> paczkaDoNadania = new PaczkaS(nrTelefonuOdbiorcy,nrTelefonuNadawcy,kodPaczkomatuDocelowego,kodPaczkomatu,false,kodOdbioru);
+                default -> paczkaDoNadania = new PaczkaXXL();
+            }
             listaPaczek.add(paczkaDoNadania);
             
 
@@ -171,6 +201,7 @@ public class PaczkomatGUI {
 
         // ------------------------------- PANEL WYBIERZ PACZKE ----------------------------------------
         panelWybierzPaczke.buttonXXL.addActionListener(e -> {
+            typPaczki = 1;
             ramka.remove(panelWybierzPaczke);
             ramka.add(panelDanePaczki);
             redraw();
@@ -178,6 +209,7 @@ public class PaczkomatGUI {
 
         // ButtonM onClick
         panelWybierzPaczke.buttonM.addActionListener(e -> {
+            typPaczki = 2;
             ramka.remove(panelWybierzPaczke);
             ramka.add(panelDanePaczki);
             redraw();
@@ -185,6 +217,7 @@ public class PaczkomatGUI {
 
         // ButtonS onClick
         panelWybierzPaczke.buttonS.addActionListener(e -> {
+            typPaczki = 3;
             ramka.remove(panelWybierzPaczke);
             ramka.add(panelDanePaczki);
             redraw();
@@ -225,6 +258,15 @@ public class PaczkomatGUI {
         ramka.revalidate();
         ramka.repaint();
     }
+
+    void stworzKodOdbioru(){
+        int kodLiczba = (int) ((Math.random() * (9999 - 1000)) + 1000);
+        System.out.println(kodLiczba);
+        kodOdbioru = Integer.toString(kodLiczba);
+
+    }
+
+
     public String getKodPaczkomatu() {
         return kodPaczkomatu;
     }

@@ -9,7 +9,7 @@ public class PaczkaXXL extends Paczka{
                    String numerTelefonuNadawcy,
                    String kodPaczkomatuDocelowego,
                    String kodPaczkomatuNadajcego,
-                     boolean czyDostarczona,
+                   boolean czyDostarczona,
                    String kodOdbioru) {
 
         super(numerTelefonuOdbiorcy,
@@ -24,11 +24,11 @@ public class PaczkaXXL extends Paczka{
         rozmiarGlebokosc = glebokosc;
     }
 
-    public PaczkaXXL(String kodPaczkomatuDocelowego, String nrTelefonuNadawcy,String nrTelefonuOdbiorcy, String kodPaczkomatuNadajacego) {
-        this.kodPaczkomatuDocelowego = kodPaczkomatuDocelowego;
-        this.numerTelefonuNadawcy = nrTelefonuNadawcy;
-        this.numerTelefonuOdbiorcy = nrTelefonuOdbiorcy;
-        this.kodPaczkomatuNadajcego = kodPaczkomatuNadajacego;
-        dostarczona = false;
-    };
+//    public PaczkaXXL(String kodPaczkomatuDocelowego, String nrTelefonuNadawcy,String nrTelefonuOdbiorcy, String kodPaczkomatuNadajacego) {
+//        this.kodPaczkomatuDocelowego = kodPaczkomatuDocelowego;
+//        this.numerTelefonuNadawcy = nrTelefonuNadawcy;
+//        this.numerTelefonuOdbiorcy = nrTelefonuOdbiorcy;
+//        this.kodPaczkomatuNadajcego = kodPaczkomatuNadajacego;
+//        dostarczona = false;
+//    };
 }

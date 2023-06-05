@@ -17,7 +17,7 @@ public class Outpost {
         Outpost outpost = new Outpost();
 
         PaczkomatGUI paczkomat1 = new PaczkomatGUI("Paczkomat Krakow 1111", "1111");
-        PaczkomatGUI paczkomat2 = new PaczkomatGUI("Paczkomat Myslenice 2222", "2222");
+        PaczkomatGUI paczkomat2 = new PaczkomatGUI("Paczkomat Myslenice 2222", "2222"); // <3
 
         outpost.paczkomaty.add(paczkomat1);
         outpost.paczkomaty.add(paczkomat2);

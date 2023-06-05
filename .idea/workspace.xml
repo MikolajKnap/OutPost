@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej">
-      <change afterPath="$PROJECT_DIR$/src/outPost/PanelOdbioru.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/outPost/PanelOtwarciaSkrytki.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Outpost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PanelGlowny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PanelGlowny.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/PanelOdbioru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PanelOdbioru.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/paczki/Paczka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/paczki/Paczka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/paczki/PaczkaXXL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/paczki/PaczkaXXL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,20 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Outpost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Outpost" />
+      <module name="OutPost" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Outpost" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,5 +112,15 @@
     <MESSAGE value="Initial commit - Testing swing" />
     <MESSAGE value="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej" />
     <option name="LAST_COMMIT_MESSAGE" value="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="panelOdbioru.poleKodOdbioru.getText()" language="JAVA" />
+        <watch expression="p.getKodOdbioru()" language="JAVA" />
+        <watch expression="kodPaczkomatuDocelowego" language="JAVA" />
+        <watch expression="listaPaczek" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
