@@ -1,5 +1,6 @@
 package outPost.paczki;
 
+
 public class PaczkaM extends Paczka{
     final double szerokosc = 20.0;
     final double wysokosc = 20.0;

@@ -2,7 +2,9 @@ package outPost.paczki;
 
 import java.io.Serializable;
 
+//klasa abstrakcyjna paczka i wszystkie klasy z niej dziedziczące są serializowane
 public abstract class Paczka implements Serializable {
+    private static final long serialVersionUID = 1L; //tymczasowo serialVersionUID z wartością domyślną
     protected double rozmiarWysokosc;
     protected double rozmiarSzerokosc;
     protected double rozmiarGlebokosc;

@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Outpost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PanelOdbioru.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PanelOdbioru.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/outPost/paczki/Paczka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/paczki/Paczka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/paczki/PaczkaXXL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/paczki/PaczkaXXL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/paczki/PaczkaM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/paczki/PaczkaM.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
