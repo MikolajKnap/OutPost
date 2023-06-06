@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/paczki/Paczka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/paczki/Paczka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/paczki/PaczkaM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/paczki/PaczkaM.java" afterDir="false" />
-    </list>
+    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Dodane wymagane zmienne do serializacji" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,14 +97,22 @@
       <option name="project" value="LOCAL" />
       <updated>1685276574839</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dodane wymagane zmienne do serializacji">
+      <created>1686031222923</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686031222923</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit - Testing swing" />
     <MESSAGE value="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej" />
-    <option name="LAST_COMMIT_MESSAGE" value="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej" />
+    <MESSAGE value="Dodane wymagane zmienne do serializacji" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodane wymagane zmienne do serializacji" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

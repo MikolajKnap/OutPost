@@ -43,8 +43,8 @@ public class Outpost {
             while (iterator.hasNext()) {
                 Paczka paczka = iterator.next();
                 PaczkomatGUI paczkomatDocelowy = znajdzPaczkomatZaPomocaKodu(paczka.getKodPaczkomatuDocelowego());
-                // no trzeba sprawdzic czy w ogole istnieje taki paczkomat docelowy, a jesli istnieje to czy
-                // paczkomat docelowy nie jest tym w ktorym jestesmy 
+                /* no trzeba sprawdzic czy w ogole istnieje taki paczkomat docelowy, a jesli istnieje to czy
+                 paczkomat docelowy nie jest tym w ktorym jestesmy */
                 paczka.setDostarczona(paczkomatDocelowy.getKodPaczkomatu() == paczkomat.getKodPaczkomatu());
                 if (paczkomatDocelowy != null && !paczka.isDostarczona()) {
                     paczka.setDostarczona(true);
