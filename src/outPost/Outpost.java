@@ -33,6 +33,7 @@ public class Outpost {
         ramka.add(panelOutpost);
         ramka.add(panelCentrala);
         ramka.setVisible(true);
+        paczkomaty = deserializePaczkomaty();
     }
 
     void przeslijPaczki(String kod) {
