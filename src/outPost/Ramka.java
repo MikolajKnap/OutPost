@@ -1,13 +1,7 @@
 package outPost;
 
-import outPost.paczki.Paczka;
-import Outpost;
-
 import javax.swing.JFrame;
 import java.awt.event.*;
-import java.io.*;
-import java.util.ArrayList;
-
 
 
 public class Ramka extends JFrame {

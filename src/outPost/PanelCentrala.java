@@ -1,4 +1,4 @@
-
+package outPost;
 
 import outPost.PaczkomatGUI;
 import outPost.buttons.PrzyciskBazowy;

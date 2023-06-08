@@ -1,12 +1,11 @@
+package outPost;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import outPost.PaczkomatGUI;
-import outPost.PanelOutpost;
-import outPost.Ramka;
 import outPost.paczki.Paczka;
 
 public class Outpost {
