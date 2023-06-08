@@ -18,7 +18,7 @@ public class Ramka extends JFrame {
             public void windowClosing(WindowEvent e) {
                 //serializacja sie dzieje
                 serializeData();
-                //serializePaczkomaty(paczkomaty);
+                //serializePaczkomaty();
                 //właściwe zamkniecie okienka
                 System.exit(0);
             }
@@ -32,7 +32,7 @@ public class Ramka extends JFrame {
         System.out.println("listener działa ez, a MP nic nie wie co robi omg");
     }
 
-    private void serializePaczki(ArrayList<Paczka> listaPaczek) {
+    /*private void serializePaczki(ArrayList<Paczka> listaPaczek) {
         String filePaczki = "../paczki.ser";
         try {
             FileOutputStream fileOut = new FileOutputStream(filePaczki);
@@ -43,7 +43,7 @@ public class Ramka extends JFrame {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
 
 }

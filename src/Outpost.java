@@ -69,7 +69,7 @@ public class Outpost {
         return null;
     }
 
-    private void serializePaczkomaty(ArrayList<PaczkomatGUI> paczkomaty) {
+    public static void serializePaczkomaty(ArrayList<PaczkomatGUI> paczkomaty) {
         String filePaczkomaty = "../paczkomaty.ser";
         try {
             FileOutputStream fileOut = new FileOutputStream(filePaczkomaty);
