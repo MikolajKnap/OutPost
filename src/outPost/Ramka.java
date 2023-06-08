@@ -18,6 +18,7 @@ public class Ramka extends JFrame {
                 System.exit(0);
             }
         });
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
     }
 
