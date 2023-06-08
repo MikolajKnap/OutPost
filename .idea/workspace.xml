@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="serialize">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="serialize and deserialize">
       <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/Ramka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Ramka.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +190,28 @@
       <option name="project" value="LOCAL" />
       <updated>1686253369906</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="serialize and deserialize">
+      <created>1686254865093</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686254865093</updated>
+    </task>
+    <task id="LOCAL-00017" summary="serialize and deserialize">
+      <created>1686255041232</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686255041232</updated>
+    </task>
+    <task id="LOCAL-00018" summary="serialize and deserialize">
+      <created>1686255097914</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686255097914</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -202,7 +221,8 @@
     <MESSAGE value="Dodane wymagane zmienne do serializacji" />
     <MESSAGE value="listener do serializacji" />
     <MESSAGE value="serialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="serialize" />
+    <MESSAGE value="serialize and deserialize" />
+    <option name="LAST_COMMIT_MESSAGE" value="serialize and deserialize" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
