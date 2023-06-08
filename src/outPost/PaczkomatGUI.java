@@ -8,11 +8,13 @@ import outPost.paczki.PaczkaXXL;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.*;
 
-public class PaczkomatGUI {
+public class PaczkomatGUI implements Serializable {
+    private static final long serialVersionUID = 1L; //tymczasowo serialVersionUID z wartością domyślną
     static final public Color kolorTlaTytulu = new Color(255, 224, 179);
     static final public Color kolorPrzyciskow = new Color(255, 218, 137);
     final Ramka ramka;

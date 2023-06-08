@@ -1,7 +1,6 @@
 package outPost;
 
 import outPost.paczki.Paczka;
-import outPost.PaczkomatGUI;
 
 import javax.swing.JFrame;
 import java.awt.event.*;
@@ -12,16 +11,14 @@ import java.util.ArrayList;
 public class Ramka extends JFrame {
     public Ramka() {
         //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-
         //String serializePaczkomaty = "../paczkomaty.ser";
-
         //listener nasłuchujący eventu zamknięcia okna X
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                 //serializacja sie dzieje
                 serializeData();
+                //serializePaczkomaty(paczkomaty);
                 //właściwe zamkniecie okienka
                 System.exit(0);
             }
@@ -48,16 +45,5 @@ public class Ramka extends JFrame {
         }
     }
 
-    private void serializePaczkomaty(ArrayList<PaczkomatGUI> paczkomaty) {
-        String filePaczki = "../paczkomaty.ser";
-        try {
-            FileOutputStream fileOut = new FileOutputStream(filePaczki);
-            ObjectOutputStream out = new ObjectOutputStream(fileOut);
-            out.writeObject(paczkomaty);
-            out.close();
-            fileOut.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 }

@@ -1,3 +1,6 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -11,7 +14,7 @@ public class Outpost {
     ArrayList<PaczkomatGUI> paczkomaty = new ArrayList<>();
     PanelOutpost panelOutpost = new PanelOutpost();
     PanelCentrala panelCentrala = new PanelCentrala();
-    
+
 
     public static void main(String[] args) {
         Outpost outpost = new Outpost();
@@ -64,6 +67,19 @@ public class Outpost {
             }
         }
         return null;
+    }
+
+    private void serializePaczkomaty(ArrayList<PaczkomatGUI> paczkomaty) {
+        String filePaczkomaty = "../paczkomaty.ser";
+        try {
+            FileOutputStream fileOut = new FileOutputStream(filePaczkomaty);
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(paczkomaty);
+            out.close();
+            fileOut.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

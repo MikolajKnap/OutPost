@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="Dodane wymagane zmienne do serializacji">
+    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="serialize">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/Ramka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Ramka.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,56 @@
       <option name="project" value="LOCAL" />
       <updated>1686031571268</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Dodane wymagane zmienne do serializacji">
+      <created>1686032888833</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686032888833</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Dodane wymagane zmienne do serializacji">
+      <created>1686032914762</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686032914762</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Dodane wymagane zmienne do serializacji">
+      <created>1686224168441</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686224168441</updated>
+    </task>
+    <task id="LOCAL-00008" summary="listener do serializacji">
+      <created>1686227307176</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686227307176</updated>
+    </task>
+    <task id="LOCAL-00009" summary="listener do serializacji">
+      <created>1686228415942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686228415942</updated>
+    </task>
+    <task id="LOCAL-00010" summary="listener do serializacji">
+      <created>1686232394831</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686232394831</updated>
+    </task>
+    <task id="LOCAL-00011" summary="serialize">
+      <created>1686247494728</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686247494728</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -121,7 +171,9 @@
     <MESSAGE value="Initial commit - Testing swing" />
     <MESSAGE value="Troche zmieniłem strukture kodu, ale dziala tak samo jak wczesniej" />
     <MESSAGE value="Dodane wymagane zmienne do serializacji" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodane wymagane zmienne do serializacji" />
+    <MESSAGE value="listener do serializacji" />
+    <MESSAGE value="serialize" />
+    <option name="LAST_COMMIT_MESSAGE" value="serialize" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
