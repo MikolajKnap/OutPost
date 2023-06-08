@@ -1,8 +1,6 @@
 package outPost;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -68,8 +66,13 @@ public class Outpost {
         return null;
     }
 
-    public static void serializePaczkomaty(ArrayList<PaczkomatGUI> paczkomaty) {
+    /*public ArrayList<PaczkomatGUI> getPaczkomaty() {
+        return paczkomaty;
+    }*/
+
+    public static void serializePaczkomaty() {
         String filePaczkomaty = "../paczkomaty.ser";
+        //ArrayList<PaczkomatGUI> paczkomaty = getPaczkomaty();
         try {
             FileOutputStream fileOut = new FileOutputStream(filePaczkomaty);
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -81,4 +84,26 @@ public class Outpost {
         }
     }
 
+    public static ArrayList<PaczkomatGUI> deserializePaczkomaty() {
+        String filePaczkomaty = "../paczkomaty.ser";
+        ArrayList<PaczkomatGUI> paczkomaty = new ArrayList<>();
+
+        try {
+            FileInputStream fileIn = new FileInputStream(filePaczkomaty);
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+
+
+            paczkomaty = (ArrayList<PaczkomatGUI>) in.readObject();
+
+            in.close();
+            fileIn.close();
+        } catch (IOException i) {
+            i.printStackTrace();
+        } catch (ClassNotFoundException c) {
+            System.out.println("Nie znaleziono klasy");
+            c.printStackTrace();
+        }
+
+        return paczkomaty;
+    }
 }

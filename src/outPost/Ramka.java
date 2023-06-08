@@ -1,7 +1,15 @@
 package outPost;
 
+import outPost.Outpost.*;
+
 import javax.swing.JFrame;
 import java.awt.event.*;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+
+import static outPost.Outpost.serializePaczkomaty;
 
 
 public class Ramka extends JFrame {
@@ -12,9 +20,11 @@ public class Ramka extends JFrame {
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
+                //ArrayList<PaczkomatGUI> paczkomatsy = new ArrayList<>();
+                //paczkomatsy = Outpost.getPaczkomaty();
                 //serializacja sie dzieje
                 serializeData();
-                //serializePaczkomaty();
+                serializePaczkomaty();
                 //właściwe zamkniecie okienka
                 System.exit(0);
             }
