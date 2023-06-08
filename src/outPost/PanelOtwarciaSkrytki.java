@@ -5,7 +5,7 @@ import outPost.buttons.PrzyciskPowrot;
 import javax.swing.*;
 import java.awt.*;
 
-public class PanelOtwarciaSkrytki extends JPanel{
+public class PanelOtwarciaSkrytki extends JPanel {
     JButton buttonPowrot;
     JLabel labelPlatnosc;
     JLabel labelPlatnosc2;
