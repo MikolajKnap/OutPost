@@ -93,7 +93,7 @@ public class Outpost {
             FileInputStream fileIn = new FileInputStream(filePaczkomaty);
             ObjectInputStream in = new ObjectInputStream(fileIn);
 
-
+            //deserializujemy dane do obiektu porzadanego typu
             paczkomaty = (ArrayList<PaczkomatGUI>) in.readObject();
 
             in.close();
