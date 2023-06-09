@@ -16,12 +16,13 @@ public class Outpost implements Serializable {
     public static void main(String[] args) {
         Outpost outpost = new Outpost();
 
-        PaczkomatGUI paczkomat1 = new PaczkomatGUI("Paczkomat Krakow 1111", "1111");
-        PaczkomatGUI paczkomat2 = new PaczkomatGUI("Paczkomat Myslenice 2222", "2222"); // <3
-
-        outpost.paczkomaty.add(paczkomat1);
-        outpost.paczkomaty.add(paczkomat2);
+        //PaczkomatGUI paczkomat1 = new PaczkomatGUI("Paczkomat Krakow 1111", "1111");
+        //PaczkomatGUI paczkomat2 = new PaczkomatGUI("Paczkomat Myslenice 2222", "2222"); // <3
+        outpost.paczkomaty = deserializePaczkomaty();
+        //outpost.paczkomaty.add(paczkomat1);
+        //outpost.paczkomaty.add(paczkomat2);
         System.out.println("eee many");
+        System.out.println(paczkomaty);
     }
 
     public Outpost() {
@@ -73,7 +74,7 @@ public class Outpost implements Serializable {
     }*/
 
     public static void serializePaczkomaty() {
-        String filePaczkomaty = "paczkomaty.ser";
+        String filePaczkomaty = "../Paczkomaty.ser";
         //ArrayList<PaczkomatGUI> paczkomaty = getPaczkomaty();
         try {
             FileOutputStream fileOut = new FileOutputStream(filePaczkomaty);

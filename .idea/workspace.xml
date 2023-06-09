@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="serialize and deserialize">
-      <change afterPath="$PROJECT_DIR$/src/outPost/paczkomaty.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paczkomaty.ser" beforeDir="false" afterPath="$PROJECT_DIR$/Paczkomaty.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/Ramka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Ramka.java" afterDir="false" />
     </list>
     <list id="5da49e62-f988-4742-8871-26338182cde6" name="Changes by Filip" comment="">
       <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
@@ -56,11 +52,9 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/outPost/Outpost.java">
       <ranges>
-        <range start1="8" end1="9" start2="8" end2="9" changelist="f2e23bb8-335a-4c00-9bee-3875856ee460" />
         <range start1="10" end1="11" start2="10" end2="11" changelist="8cb4e502-991c-42c5-ad99-c3543c36aeb6" />
         <range start1="14" end1="15" start2="14" end2="14" changelist="5da49e62-f988-4742-8871-26338182cde6" />
-        <range start1="23" end1="23" start2="22" end2="23" changelist="f2e23bb8-335a-4c00-9bee-3875856ee460" />
-        <range start1="74" end1="75" start2="74" end2="75" changelist="f2e23bb8-335a-4c00-9bee-3875856ee460" />
+        <range start1="75" end1="76" start2="74" end2="75" changelist="f2e23bb8-335a-4c00-9bee-3875856ee460" />
       </ranges>
     </file>
   </component>
@@ -239,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686255201716</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="serialize and deserialize">
+      <created>1686339342615</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686339342615</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
