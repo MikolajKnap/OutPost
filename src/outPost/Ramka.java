@@ -23,6 +23,7 @@ public class Ramka extends JFrame {
                 //ArrayList<PaczkomatGUI> paczkomatsy = new ArrayList<>();
                 //paczkomatsy = Outpost.getPaczkomaty();
                 //serializacja sie dzieje
+                System.out.println("eee manyZramki");
                 serializeData();
                 serializePaczkomaty();
                 //właściwe zamkniecie okienka

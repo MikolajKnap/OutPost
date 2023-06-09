@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 import outPost.paczki.Paczka;
 
-public class Outpost {
+public class Outpost implements Serializable {
     Ramka ramka = new Ramka();
     ArrayList<PaczkomatGUI> paczkomaty = new ArrayList<>();
     PanelOutpost panelOutpost = new PanelOutpost();
@@ -21,6 +21,7 @@ public class Outpost {
 
         outpost.paczkomaty.add(paczkomat1);
         outpost.paczkomaty.add(paczkomat2);
+        System.out.println("eee many");
     }
 
     public Outpost() {
@@ -72,7 +73,7 @@ public class Outpost {
     }*/
 
     public static void serializePaczkomaty() {
-        String filePaczkomaty = "../paczkomaty.ser";
+        String filePaczkomaty = "paczkomaty.ser";
         //ArrayList<PaczkomatGUI> paczkomaty = getPaczkomaty();
         try {
             FileOutputStream fileOut = new FileOutputStream(filePaczkomaty);
