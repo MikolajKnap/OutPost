@@ -15,12 +15,13 @@ public class Outpost implements Serializable{
 
     public static void main(String[] args) {
         Outpost outpost = new Outpost();
+        paczkomaty = deserializePaczkomaty();
 
-/*        PaczkomatGUI paczkomat1 = new PaczkomatGUI("Paczkomat Krakow 1111", "1111");
+        PaczkomatGUI paczkomat1 = new PaczkomatGUI("Paczkomat Krakow 1111", "1111");
         PaczkomatGUI paczkomat2 = new PaczkomatGUI("Paczkomat Myslenice 2222", "2222"); // <3
 
         outpost.paczkomaty.add(paczkomat1);
-        outpost.paczkomaty.add(paczkomat2);*/
+        outpost.paczkomaty.add(paczkomat2);
     }
 
     public Outpost() {

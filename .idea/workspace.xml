@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="elo zmiany">
+    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="serialize works?">
+      <change afterPath="$PROJECT_DIR$/paczkomaty.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" afterDir="false" />
     </list>
+    <list id="5da49e62-f988-4742-8871-26338182cde6" name="Changes by Filip" comment="">
+      <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
+    </list>
+    <list id="8cb4e502-991c-42c5-ad99-c3543c36aeb6" name="Changes by mikoz" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +48,17 @@
         <option name="url" value="https://github.com/MikolajKnap/OutPost.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/outPost/Outpost.java">
+      <ranges>
+        <range start1="14" end1="15" start2="14" end2="14" changelist="5da49e62-f988-4742-8871-26338182cde6" />
+        <range start1="17" end1="17" start2="16" end2="17" changelist="f2e23bb8-335a-4c00-9bee-3875856ee460" />
+        <range start1="18" end1="19" start2="18" end2="19" changelist="f2e23bb8-335a-4c00-9bee-3875856ee460" />
+        <range start1="22" end1="23" start2="22" end2="23" changelist="f2e23bb8-335a-4c00-9bee-3875856ee460" />
+        <range start1="79" end1="80" start2="79" end2="80" changelist="5da49e62-f988-4742-8871-26338182cde6" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -213,7 +228,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686255097914</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="serialize and deserialize">
+      <created>1686255201716</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686255201716</updated>
+    </task>
+    <task id="LOCAL-00020" summary="serialize and deserialize">
+      <created>1686339342615</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686339342615</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,15 +253,21 @@
     <MESSAGE value="listener do serializacji" />
     <MESSAGE value="serialize" />
     <MESSAGE value="serialize and deserialize" />
-    <option name="LAST_COMMIT_MESSAGE" value="serialize and deserialize" />
+    <MESSAGE value="serialize works?" />
+    <option name="LAST_COMMIT_MESSAGE" value="serialize works?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/outPost/PaczkomatGUI.java</url>
-          <line>244</line>
+          <url>file://$PROJECT_DIR$/src/outPost/Outpost.java</url>
+          <line>78</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/outPost/Outpost.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
