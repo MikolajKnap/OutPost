@@ -27,6 +27,7 @@ public class Outpost implements Serializable{
         paczkomaty = deserializePaczkomaty();
         for (PaczkomatGUI paczkomacik:paczkomaty
              ) {
+            paczkomacik.PaczkomatGUIMK();
             paczkomacik.ramka.setVisible(true);
         }
         ramka = new Ramka();

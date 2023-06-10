@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="serialize and deserialize">
+    <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="elo zmiany">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
-    </list>
-    <list id="5da49e62-f988-4742-8871-26338182cde6" name="Changes by Filip" comment="">
-      <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
-    </list>
-    <list id="8cb4e502-991c-42c5-ad99-c3543c36aeb6" name="Changes by mikoz" comment="">
-      <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/PaczkomatGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,15 +44,6 @@
         <option name="url" value="https://github.com/MikolajKnap/OutPost.git" />
       </UrlAndAccount>
     </option>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/outPost/Outpost.java">
-      <ranges>
-        <range start1="10" end1="11" start2="10" end2="11" changelist="8cb4e502-991c-42c5-ad99-c3543c36aeb6" />
-        <range start1="14" end1="15" start2="14" end2="14" changelist="5da49e62-f988-4742-8871-26338182cde6" />
-        <range start1="75" end1="76" start2="74" end2="75" changelist="f2e23bb8-335a-4c00-9bee-3875856ee460" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -227,21 +213,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686255097914</updated>
     </task>
-    <task id="LOCAL-00019" summary="serialize and deserialize">
-      <created>1686255201716</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1686255201716</updated>
-    </task>
-    <task id="LOCAL-00020" summary="serialize and deserialize">
-      <created>1686339342615</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1686339342615</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -258,14 +230,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/outPost/Outpost.java</url>
-          <line>77</line>
+          <url>file://$PROJECT_DIR$/src/outPost/PaczkomatGUI.java</url>
+          <line>244</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/outPost/Outpost.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
