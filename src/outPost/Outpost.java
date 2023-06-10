@@ -6,9 +6,9 @@ import java.util.Iterator;
 
 import outPost.paczki.Paczka;
 
-public class Outpost implements Serializable {
-    Ramka ramka = new Ramka();
-    ArrayList<PaczkomatGUI> paczkomaty = new ArrayList<>();
+public class Outpost implements Serializable{
+    Ramka ramka;
+    static ArrayList<PaczkomatGUI> paczkomaty = new ArrayList<>();
     PanelOutpost panelOutpost = new PanelOutpost();
     PanelCentrala panelCentrala = new PanelCentrala();
 
@@ -16,17 +16,20 @@ public class Outpost implements Serializable {
     public static void main(String[] args) {
         Outpost outpost = new Outpost();
 
-        //PaczkomatGUI paczkomat1 = new PaczkomatGUI("Paczkomat Krakow 1111", "1111");
-        //PaczkomatGUI paczkomat2 = new PaczkomatGUI("Paczkomat Myslenice 2222", "2222"); // <3
-        outpost.paczkomaty = deserializePaczkomaty();
-        //outpost.paczkomaty.add(paczkomat1);
-        //outpost.paczkomaty.add(paczkomat2);
-        System.out.println("eee many");
-        System.out.println(paczkomaty);
+/*        PaczkomatGUI paczkomat1 = new PaczkomatGUI("Paczkomat Krakow 1111", "1111");
+        PaczkomatGUI paczkomat2 = new PaczkomatGUI("Paczkomat Myslenice 2222", "2222"); // <3
+
+        outpost.paczkomaty.add(paczkomat1);
+        outpost.paczkomaty.add(paczkomat2);*/
     }
 
     public Outpost() {
-
+        paczkomaty = deserializePaczkomaty();
+        for (PaczkomatGUI paczkomacik:paczkomaty
+             ) {
+            paczkomacik.ramka.setVisible(true);
+        }
+        ramka = new Ramka();
         panelCentrala.przyciskBazowy.addActionListener(e -> {
             przeslijPaczki(panelCentrala.poleWysylka.getText());
         });
@@ -35,7 +38,6 @@ public class Outpost implements Serializable {
         ramka.add(panelOutpost);
         ramka.add(panelCentrala);
         ramka.setVisible(true);
-        paczkomaty = deserializePaczkomaty();
     }
 
     void przeslijPaczki(String kod) {
@@ -74,7 +76,7 @@ public class Outpost implements Serializable {
     }*/
 
     public static void serializePaczkomaty() {
-        String filePaczkomaty = "../Paczkomaty.ser";
+        String filePaczkomaty = "../paczkomaty.ser";
         //ArrayList<PaczkomatGUI> paczkomaty = getPaczkomaty();
         try {
             FileOutputStream fileOut = new FileOutputStream(filePaczkomaty);

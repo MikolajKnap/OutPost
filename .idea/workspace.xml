@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e23bb8-335a-4c00-9bee-3875856ee460" name="Changes" comment="serialize and deserialize">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/outPost/Outpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/outPost/Outpost.java" afterDir="false" />
     </list>
     <list id="5da49e62-f988-4742-8871-26338182cde6" name="Changes by Filip" comment="">
